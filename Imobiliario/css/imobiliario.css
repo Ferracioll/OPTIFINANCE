@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:hsl(31, 100%, 95%);
+}
+.imagem-canto-direito {
+    height: 100%;
+    position: absolute;
+    top: 7px; /* Ajuste o valor para a distância do topo */
+    right: 10px; /* Ajuste o valor para a distância da borda direita */   
+    width: 50px; /* Ajuste o tamanho da logo */     
+    height: auto;
+    
+}
+.faixa-topo {
+position: fixed;   
+top: 0;
+left: 0;
+width: 100%;
+height: 60px; 
+background-color: #ffc235; 
+z-index: -1;   
+box-shadow: 0 10px 30px rgb(221, 133, 0);  
+}
+.titulo {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    font-size: 24px; 
+    padding: 10px; 
+    font-weight: 400;
+  }
+
+button.home-button{
+    position: absolute;
+    top: 16.3px; 
+    margin-left: -72%; 
+    padding: 2px;
+    height: 27px; 
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  
+}
+button.filter{
+    position: absolute;
+    top: 14.2px; 
+    margin-left: -68%; 
+    padding: 2px;
+    height: 27px; 
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+
+.search-top{
+   position: absolute;
+   top: 14px;
+   margin-left: -45%;
+   height: 25px;
+   border: none;
+   border-radius: 24px;
+
+} 
+.icon-top{
+    padding: 8px 8px 8px 10px;
+    min-width: 80px;
+    min-height: 32px;
+    background-color: #fffffff2;
+    color:#000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;   
+    gap: 10px;
+    height: 20px;
+    top: 17px;
+    box-shadow: 0px 1px 40px #984400;
+    
+}
+.search-input{
+    border: none;
+    background-color: transparent;
+}
+.search-input:focus{
+    outline: none;
+}
+
+.input-group{
+    display: center;
+    align-items: center;
+    background-color: #fe8018;
+    padding: 0px 8px 10px 8px;
+    border-radius: 24px;
+    gap: 8px;
+    box-shadow: 5px 15px 30px hsl(21, 86%, 41%);
+}
+.input-icon{
+   
+   
+    color:#000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.input-field{
+    width: 95%;
+    border: none;
+    background-color: transparent;
+}
+.input-field:focus{
+    outline: none;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    margin-top: 12px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 18px;
+    width:650px ;
+    max-height: 450px;
+    overflow-y: auto;
+    
+
+}
+.item{
+    display:flex;
+    gap: 12px;
+}
+
+.item-image{
+    width: 100px;
+    height: 120px;
+}
+
+.item-image img{
+    width: 100px;
+    height: 120px;
+    object-fit:cover;
+    border-radius: 8px;
+}
+
+.item-link{
+    font-size: 18px;
+    color: #000000;
+    
+}
+.item-link:hover{
+    color: #72bdff;
+}
+.item-link2{
+    font-size: 18px;
+    color: #333;
+
+}
+.item-link2:hover{
+    color: #72bdff;
+}
+.item-link3{
+    font-size: 18px;
+    color: #333;
+
+}
+.item-link3:hover{
+    color: #72bdff;
+}
+.item-subtitle{
+    font-size: 12px;
+    color: #666;
+    font-weight: 600;
+
+}
+.item-description{
+    font-size: 14px;
+    color: #666;
+}
+#no-results{
+    display: none;
+    text-align: center;
+}
+.filter-search-cripto{
+    position: absolute;
+    top: 44%;
+    left: 1.9%;
+ 
+}
+
+.filter-search-cripto{
+    position: absolute;
+    top: 25%; 
+    left: 2%;
+    text-decoration: none;
+ }
+ .filter-search-acoes{
+     position: absolute;
+     top: 30%; 
+     left: 3.99%;
+     text-decoration: none;
+  }
+  .filter-search-imobiliario{
+     position: absolute;
+     top: 35%; 
+     left: 2.8%;
+     text-decoration: none;
+  }
+  .text-filter-cripto{
+    color: #ffffff;
+ }
+
+ .text-filter-acoes{
+     color: #ffffff;
+ }
+ .text-filter-imobiliario{
+     color: #ffffff;
+     display: flex;
+     text-align: center;
+ }
+ .box-esquerda{
+ position: fixed;   
+ top: 20%;
+ left: 0%;
+ width: 12%;
+ height: 420px; 
+ background-color: #5c5b5b; 
+ z-index: -1; 
+ border-radius: 0px 20px 80px 0px;
+ box-shadow: 0px 5px 30px #666666;
+ }
